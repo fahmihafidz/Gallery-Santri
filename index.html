@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gallery Santri</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">📸 Gallery Santri</div>
+    <div class="cart-icon">🛒</div>
+  </nav>
+
+  <!-- Banner -->
+  <div class="banner">
+    <h2>Foto Santri Eksklusif!</h2>
+    <p>Mulai dari Rp10.000 saja</p>
+  </div>
+
+  <!-- Produk -->
+  <section class="product-grid">
+    <div class="product-card"><img src="https://drive.google.com/uc?export=view&id=1zYaB3_jcKJQ0dVy3A8RGX0AjDPcx5cKn" alt="Santri A">
+      <h3>Santri A</h3>
+      <p class="price">Rp15.000</p>
+      <button onclick="addToCart('Santri A', 15000)">Beli</button>
+    </div>
+
+    <div class="product-card">
+      <img src="images/foto2.jpg" alt="Santri B">
+      <h3>Santri B</h3>
+      <p class="price">Rp15.000</p>
+      <button onclick="addToCart('Santri B', 15000)">Beli</button>
+    </div>
+
+    <!-- Tambah produk lainnya di sini -->
+  </section>
+
+  <!-- Keranjang -->
+  <section class="cart-section">
+    <h2>Keranjang Anda</h2>
+    <ul id="cart-list"></ul>
+    <p>Total: <span id="total">Rp0</span></p>
+  </section>
+
+  <footer>
+    <p>© 2025 SantriShop. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
